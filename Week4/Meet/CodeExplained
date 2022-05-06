@@ -1,0 +1,54 @@
+Que: I understand the problem introduced in class to be:
+ANS:
+The whole program is about a user that is assumed to be a student is getting ready
+for the mid-term exam and so the user have to study even during the study sessions
+so in other to make t fun and asp stay awake, the user is expected to take some
+Caffeinated beverages, drinks by specifying the name, mg of caffeine and the price
+so the user will play chicken with your drink choices. keep drinking, the total drinks
+taken with mg of caffeine which is being calculate and stored in an array and when the
+user drinks anything less than 100 then the user losses (that is, the user slept off)
+if the user drinks anting greater than 100 but less than 500 then the user won and
+if the user drinks anything greater than 500 then the user is said to have lost(over drank)
+and can't recall anything studied
+
+QUE: My UML Diagram for these classes:
+ANS:
+    The UML Diagram is attached as an Image
+
+QUE: The solution to the problem were the following programs: (provide the names
+of the .java files only)
+ANS:
+TestPrep.java
+Cafe.java
+
+QUE: I tested the solution with at least 3 different value sets. The test data and results are:
+ANS:
+====> Value 1 ()
+
+====> Value 2 ()
+
+====> Value 3 ()
+
+
+
+QUE: Reflect on your problem-solving:
+=> How confident are you in the solution?
+   I am very confident of my solution
+
+=> How ready do you feel for the midterm?
+   With my understanding of problem solving and also the ability to read codes
+   I am ready to take up the mid-term exam and do the best
+
+=> How comfortable are you with Project #1?
+   Very comfortable because it does not only let me utilize what I have learnt but also
+   provides me the opportunity to think wider and try to solve a problem
+
+
+QUE: Reflect on your learning and your needs. After this class meeting, what topics
+do you feel like you learned and what topics do you feel like you need more
+information on to learn?
+ANS:
+I am able to grab the concept of ArrayList, getters and also enhanced my knowledge of
+conditional statements and loops
+
+

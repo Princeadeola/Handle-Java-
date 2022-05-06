@@ -1,0 +1,56 @@
+Errors encountered in the code before corrections:
+Error1: reverseString method not created -- replaced with reverse
+Error2: Error 2:- mix variable is not initialized -- initialized it to empty string
+Error3: NO condition to check if it looks like original word
+
+Que: I understand the problem introduced in class to be:
+Ans:
+I understand the problem introduced in the class to be
+a word scramble program that receives an input from the user,
+then checks for the vowel sound in it (a e i o u),
+it then returns the substring of the vowel,
+it then concatenate the substring with the substring
+starting from index 0 till the index of the vowel
+
+Que: My UML Diagram for these classes:
+Ans:
+    Attached image to submission
+
+Que:The solution to the problem were the following programs:
+Ans:
+PuzzlePage.java
+WordScramble.java
+
+Que:I tested the solution with at least 3 different value sets. The test data and results are:
+Ans:
+The condition is to only reverse if it still looks like the original word
+var1 = kevin  (will return INKEV which does not look like original word 'kevin')
+result: INKEV
+
+var2 = on    (still looks like original word 'on')
+result: NO
+
+var3 = oom   (still looks like the original word 'oom')
+result: MOO
+
+Reflect on your problem-solving:
+Que: How confident are you in the solution? :
+Ans:
+I am very confident
+
+Que: How often do you go to the Internet when working on your lab?
+Ans:
+I visited the oracle docs to reflect on my understanding of
+some of the methods like subString() and also working with recursive calls
+
+Que: How often do you refer to programs from class or the text when working on your lab?
+Ans:
+Quite often to understand to reference instructions and code sample
+
+Que: Reflect on your learning and your needs. After this class meeting, what topics do
+you feel like you learned and what topics do you feel like you need more
+information on to learn?
+Ans:
+With this lesson, I am able to not just understand but utilize some of the methods,
+also I am able to take out time of read the conditional statements which I will do more
+study on with more examples and references

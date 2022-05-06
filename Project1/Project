@@ -1,0 +1,34 @@
+Ibrahim
+ia426
+CS501 - 001
+Laundry cost
+As an international graduate student who like to budget for all expenses. I like to know the
+amount I spend on laundry biweekly, monthly and quarterly, we have two machines with one for
+wash and the other for drying. For every wash it cost 8quarters ($2) and for every dry it cost
+another 8quarters ($2). It is assumed that every user needs to use the laundry at least once a
+week and at least one set of wash.
+I would like to have a tool that allows me to enter sets of wash I have on average weekly, and it
+would be able to output the cost for the week, month and Quarter.
+The inputs would be the set number.
+The output would be the cost incurred at the laundry.
+
+<=================================== Documentations =====================================>
+
+Checking for amount spent on laundry biweekly monthly quarterly
+Every wash cost $2
+Every dry cost $2
+Every user uses the laundry at least once a week and at least one set of wash
+--Allow user to enter set of wash on average weeks
+--Output the cost for a week, month and quarter
+--Input would be number of set to wash
+--Output will be total cost
+
+<========= Laundry.java =========>
+=> Create a method to get user data
+=> Get user input for number of wash per week
+=> Get user input for set of wash per week
+=> User is requested to select an option
+=> Calculate the average by calling getAverage method
+=> Calculate the monthly by calling getMonthly method
+=> Calculate the quarterly by calling getQuarterly method
+=> If User enters 0, the program is terminated

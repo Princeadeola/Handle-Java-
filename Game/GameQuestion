@@ -1,0 +1,65 @@
+Choosing a Game for Family Game Night - a little program
+
+You own several games and you decide to write a program to make it easier
+to fairly choose a game to play on family game night. This will be your first
+pass at this program. The user will enter information for each game for as many
+games as they want. The name of the game and at least two additional attributes
+will be included. After all the games have been entered, the user will see the full
+list of games print to the screen. The program will randomly select one and display
+it with a message "May we recommend ...". The program will make use of at least one of
+the additional attributes in a way that uses an if statement and displays or processes
+a subset of the list of games.
+
+Technical requirements:
+
+At least 2 files
+At least 2 Constructors
+
+A toString() method in the class for the games
+
+A loop with a sentinal for data entry
+
+Use of ArrayList
+
+Use of Random to choose a game
+
+Loop with an if to process games
+
+20 pts
+
+Planning: Includes any classes you choose to create with all attributes and
+behaviors defined. Includes pseudocode for the major methods and for the driver
+program (the one with a main method).
+ANS:
+<=======pseudocode for the Game class=====>
+=> Greeting to the user
+=> Ask the use for game to play
+=> User select an option
+=> Checks for the game that the users options matches
+=> Calls the object of the game
+=> Calls the method to run the game
+=> If the user enters anything not among the option then it brings a warning
+=> Else it opens the game to play
+
+NOTE: The games are implemented from ideas seen on stackoverflow
+
+20 pts
+
+Class definition of Game in Java
+ANS:
+Game class
+2 constructors
+getUserInput method
+
+20 pts
+
+Driver class performs as specified in the description
+Ans:
+Yes
+
+
+General advice: I do not expect everyone to get this written in an IDE, tested
+and debugged in the time you have. For that reason, you can turn in txt files OR
+.java files. They have to be in a zip folder with your drexel abc123 id and Midterm.
+Mine would be named "trp74_Midterm.zip". Do each part, in order, if you want a chance
+at partial credit. Upload the zip file to this question.

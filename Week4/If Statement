@@ -1,0 +1,102 @@
+if (condition) {
+ //do once when true
+}
+
+WHILE LOOP
+
+while (condition) {
+  //do every time condition is true
+}
+
+Structure:
+
+variable used in condition, declared and initialized
+while (use the varible in the condition) {
+ //in the body of the loop, you have to change that
+ //variable's value
+}
+
+int count = 0;
+while (count < 4) {
+  //some line you want to happen 5 times
+  s.o.p ("happy birthday");
+  //count = count + 1;
+  //count += 1;
+  count++;
+}
+
+Sentinal Value
+-1 for test grades
+999 for temperatures
+"_" || "?" || "!"
+
+FOR LOOP
+
+for (var init; condition; increment) {
+  //do something
+}
+
+for (int count = 0; count < 5; count++) {
+ s.o.p ("Happy Birthday);
+}
+
+Don't use a for loop if you need the count after the loop.
+
+ArrayLists
+
+import java.util.ArrayList;
+...code not shown...
+ArrayList<String> deck = new ArrayList<String>(52);
+
+deck.add("Ace of Clubs"); //returns a boolean based on success
+deck.add(1, "2 of Clubs"); //adds to the given location and
+shifts anything there down one space
+int numCards = deck.size(); //returns an int for number of items
+String myCard = deck.remove(0); //returns the object and removes
+it from the list (deck)
+String houseCard = deck.get(1); //returns the object without
+removing it
+int where = deck.indexOf("Ace of Hearts"); //returns index of
+first occurance of item
+boolean hasJoker = deck.contains("Joker"); //returns true if found
+false otherwise
+deck.clear(); //empty the list
+boolean emptyPile = deck.isEmpty(); //returns true if empty
+
+ArrayList<Integer> numbers = new ArrayList<Integer>(25);
+Random randGen = new Random();
+for (int a=0; a < 25; a++) {
+  numbers.add(randGen.nextInt(500)+1);
+}
+//running sum pseudocode
+sum = 0
+count = 0
+while (count < 25)
+  sum = sum + numbers.get(count)
+  count++
+
+print sum
+
+//while loop code
+int sum = 0;
+int count = 0;
+while (count < 25) {
+  sum += numbers.get(count);
+  count++;
+}
+System.out.println(sum);
+System.out.println("Average: " + (sum/count));
+
+//for loop code
+int sum = 0;
+for (int count = 0; count < 25; count++) {
+  sum += numbers.get(count);
+}
+System.out.println("Sum: " + sum);
+System.out.println("Average: " + ((double)sum/numbers.size()));
+
+//print it all out
+for (Integer num : numbers) {
+  System.out.println(num);
+}
+

@@ -1,0 +1,77 @@
+Week2Lab – 10 pts
+Pre-lab questions
+1.There are many String methods in Java that we did not use in class this week.
+Using the Oracle documentation for String, determine what the output for each of
+these lines of code would be for an input String of “Chocolate Chip” stored in a
+variable named str.
+
+a.char a = str.charAt(1);
+b.int b = str.compareTo(“Oreo”);
+c.int c = str.compareToIgnoreCase(“chocolate chip”);
+d.String d = str.concat(“ Cookie”);
+e.boolean e = str.contains(‘z’);
+f.int f = str.indexOf(‘a’);
+g.int g = str.indexOf(‘h’, 5);
+h.String h = str.substring(10);
+
+2.There are two ways to add Randomness to our programs. We used the Random class,
+however, there is also a Random as part of the Math class.
+
+Math.random() returns a double between 0.0 and 1.0 exclusive (will never return 1)
+Random randgen = new Random(); //requires an import statement
+int numb = randgen.nextInt(10); //produces a random int between 0 and 10
+                                exclusive (will never return 10)
+
+Use each of these to produce a random int in the range 21 to 55 inclusive
+(both 21 AND 55 may be returned)
+a. Using Math.random()
+
+
+b. Using Random class
+
+
+
+Choose one of the following problems to solve with a small (all in main) Java program.
+1.Statistics
+2.Dice Simulation
+3.Soundex
+
+Choose a problem, restate it to make sure you fully understand the problem you are solving.
+Create a plan to solve it by writing it out in English and/or pseudocode.
+(The English is optional; the pseudocode is not). Then implement your solution in Java
+in the same iterative way we modeled in class. Start with a working program, then add to it.
+Use the Scanner class to collect input from the user (remember, you may want to add that
+functionality AFTER you know your algorithm works correctly). You must provide an answer
+to the user in a user-friendly way...just giving them a number is not very friendly! Test
+your solution with several different sets of input values to make sure your algorithm is
+producing correct results (check with a calculator).
+
+Statistics
+Provide formatted output for based statistics on three test grades. Ask the user for each
+test grade then supply them with a nicely formatted report that includes the average,
+the min, the max, the range or spread. Hint: Min and Max are Math methods but they only
+take two values!
+
+Dice Simulation
+Create a dice simulation to be used in a math class. Randomly generate the roll on
+2 10 sided dice. Then output each number, the sum of those numbers, the difference
+between those numbers, the product of those numbers, the division with remainder
+(both as ints), the die 1 number raised to the power of the die 2 number. Use
+printf to format the output to the user. The output should look like an answer
+key for the teacher/aide/parent: The formula with the numbers followed by the result.
+Ex:
+Addition: 6 + 5 = 11
+
+Soundex
+Before computers Census workers used the following algorithm to normalize names
+that sound the same but are spelled differently.
+For all names greater than 2 letters (you can assume all names are greater than
+two letters, or deal with two letter names if you know how):
+1.Remove the second of all double letters
+Randall -> Randal
+Aaronson -> Aronson
+
+2.Remove all vowels (a, e, i, o, u, y) unless it is the first letter
+Randal -> Rndl
+Aronson -> Arnsn
+Ask user for surname, return the Soundex version of their name.

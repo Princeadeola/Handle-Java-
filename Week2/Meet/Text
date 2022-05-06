@@ -1,0 +1,93 @@
+<Ibrahim Alabi>
+<04/06/2022>
+Week2Meet - 10 pts
+Turn in on BBL as soon as complete, but before end of day
+Friday following the lecture.
+===============================
+Reading a program
+Write pseudocode for the GenerateCode program.
+/***************************************
+ * GenerateCode.java
+ * random passphrase program
+ *
+ * @author Ibrahim Alabi
+ * @version 1.0
+ ****************************************/
+
+---------------------------------------------------------------------------------------------------------------------------
+I understand the problem introduced in class to be: (in your own words)
+The program introduce in class is to generate set of random code in a particular pattern
+My plan to solve this problem is:
+Ask user to input answers to some set of questions
+Generate a random number between 2 to 8
+
+Use the string method replace vowel sounds (a,e,I,o,u) with empty eg.
+String shortFvrt = favorite.replace('a', ' ');
+
+Print result in a define way to reflect motive eg.
+System.out.printf("Code #1: %s%d%s\n", lovedOne, year, shortFvrt);
+S means string and the d means decimal
+
+
+
+The solution to the problem was the following program:
+(provide the name of the .java file only)
+GenerateCode.java
+I tested the solution with at least 3 different value sets. The test data and results are:
+(use this format: var1 = data, var2 = data, etc -> result)
+Var 1,
+ lovedOne = tomi;
+favourite = eba,
+place = Ikire,
+year =2003,
+Output
+Code #1: tomi2003b
+Code #2: b4ikire
+Code #3: tomi4ikire2003
+Code #4: 4ikire2003tomi
+
+Var 2
+lovedOne = lekan;
+favourite = rice,
+place = Ibadan,
+year =2010,
+Output
+Code #1: lekan2010rc
+Code #2: rc7ibadan
+Code #3: lekan7ibadan2010
+Code #4: 7ibadan2010lekan
+
+Var 3
+lovedOne = tinuke;
+favourite = poundedyam,
+place = regina,
+year =2021,
+Output
+Code #1: tinuke2021pnddym
+Code #2: pnddym2regina
+Code #3: tinuke2regina2021
+Code #4: 2regina2021tinuke
+
+
+
+
+Reflect on your problem-solving:
+How confident are you in the solution?  I very confident, I believe
+there is room for learning more
+On a scale of 1 to 10 with 1 not at all confident and 10 very confident,
+how confident are you in reading the programs provided in lecture?
+10
+How confident are you in writing the programs in lecture? 9
+How confident are you in writing the labs on your own? 9
+
+Reflect on your learning and your needs. After this class meeting, what
+topics do you feel like you learned and what topics do you feel like you need
+more information on to learn?
+
+I learned how to manipulate string using string methods
+str.Replace();
+str.substring();
+str.toLowerCase();
+str.toUpperCase();
+I also learned how to use the random
+Random randGen = new Random();

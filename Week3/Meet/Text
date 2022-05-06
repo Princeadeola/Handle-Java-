@@ -1,0 +1,111 @@
+
+<Replace with your name>
+<Replace with date>
+Week3Meet - 10 pts
+Turn in on BBL as soon as complete, but before end of day Friday following the lecture.
+===============================
+Reading a program
+Read both programs. Be the computer and trace which line of code is executing in order.
+Keep track of what the current state of each variable is.
+import java.util.Scanner;
+
+/**********************************
+ * PuzzlePage.java
+ * Creates word puzzles for the Triangle
+ * @author Tammy Pirmann
+ * @version 20210407
+ *********************************/
+public class PuzzlePage {
+  public static void main(String args[]){
+
+    Scanner keyboard = new Scanner(System.in);
+    WordScramble puzzle = new WordScramble();
+
+
+    System.out.print("Enter the solution word: ");
+    String solution = keyboard.nextLine();
+
+    System.out.printf("Your puzzle is: %s", puzzle.scramble(solution));
+  }
+}
+
+
+
+
+
+/*******************************
+ * WordScramble.java, Scrambles a given word
+ * @author Tammy Pirmann
+ * @version 20210407
+ *******************************/
+public class WordScramble {
+  private String solution;
+  //constructor
+  public WordScramble() {
+    solution = "NA";
+  }
+  //Setter
+  public void setSolution(String str){
+    solution = str.toUpperCase();
+  }
+  //Scrambles the solution String
+  public String scramble(String str){
+    setSolution(str);
+    String mix;
+    int a = solution.indexOf("A");
+    if (a >= 0) {
+      mix = solution.substring(a).concat(solution.substring(0,a));
+    }
+    int e = solution.indexOf("E");
+    if (e >= 0) {
+      mix = solution.substring(e).concat(solution.substring(0,e));
+    }
+    int i = solution.indexOf("I");
+    if (i >= 0) {
+      mix = solution.substring(i).concat(solution.substring(0,i));
+    }
+    int oh = solution.indexOf("O");
+    if (oh >= 0) {
+      mix = solution.substring(oh).concat(solution.substring(0,oh));
+    }
+    int u = solution.indexOf("U");
+    if (u >= 0) {
+      mix = solution.substring(u).concat(solution.substring(0,u));
+    }
+    //reverse it in case it still looks like the original word
+    return reverse(mix);
+  }
+  //helper method to reverse the scrambled string
+  private String reverse(String str){
+    //base case
+    if (str.isEmpty()){
+      return str;
+    }
+    //Recursive call
+    return reverseString(str.substring(1)) + str.charAt(0);
+  }
+}
+
+
+
+Everything below this line relates ONLY to the problem discussed in class, the code we
+wrote together.
+I understand the problem introduced in class to be: (in your own words)
+
+My UML Diagram for these classes: (feel free to paste in a photo of a hand done diagram)
+
+The solution to the problem were the following programs:
+(provide the names of the .java files only)
+
+I tested the solution with at least 3 different value sets. The test data and results are:
+(use this format: var1 = data, var2 = data, etc -> result)
+
+Reflect on your problem-solving:
+How confident are you in the solution?
+How often do you go to the Internet when working on your lab?
+How often do you refer to programs from class or the text when working on your lab?
+
+Reflect on your learning and your needs. After this class meeting, what topics do
+you feel like you learned and what topics do you feel like you need more
+information on to learn?
+

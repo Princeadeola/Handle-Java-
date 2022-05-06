@@ -1,0 +1,91 @@
+Week3Lab – 10 pts
+Pre-lab questions
+Conditional statements can take some practice. Work each of these out to see
+what they evaluate to. You may find it useful to create truth tables in your notes (p. 195)
+
+1.String apple = “Rome”;
+String city = “Rome”;
+String fruit = “apple”;
+double cost = 5.25;
+double value = 3.0;
+int count = 10;
+int qty =80;
+Boolean old = false;
+Boolean smart = true;
+
+
+a.apple == fruit
+b.city.equals(apple)
+c.cost > value
+d.apple != city
+e.!old ||smart
+f.smart && (value <= cost/2.0)
+g.(value == cost) && (count < 10)
+h.(qty < value) || (qty < cost)
+i.!(qty < value) && (value < cost)
+
+2.If statements in Java are related to if sentences in English. Convert each of these
+sentences into their Java equivalent. Remember to declare any variables needed:
+
+a.If there are more than 10 cookies on the tray, I will take one.
+
+b.If the cookie tray has Oreo’s and there are more than 10 cookies on the tray,
+I will take an Oreo.
+
+c.If the top is on sale for less than $25 or more than 50% discount and I have at least
+twice the cost of the top in my wallet, I will buy it.
+
+d.I will go swimming is the weather is sunny and the temperature is over 85.
+
+e.Help me set my alarm clock. I get up at 8 am most days, but on Thursday I have to get up
+at 7 am and on Saturday and Sunday I get to sleep until 9 am.
+
+
+
+
+
+
+
+
+Choose one of the following do develop into a program that uses at least one class outside
+of the class that contains the main method. Once chosen, do the following:
+Understand the problem (restate in your own words, make any assumptions clear):
+
+UML diagrams of any classes needed, including the one with main:
+
+Pseudocode of each class:
+
+Name of files (.java) submitted:
+
+
+Smart Mailbox
+With the availability of cheap sensors and processors, you have an idea to improve the
+common roadside mailbox. Develop and write an object oriented program that represents the
+mailbox. Think about the things a smart mailbox would know about itself (the state) and
+what a smart mailbox should be able to do (the behaviors).
+Also think about how the homeowner/renter would interact with the smart mailbox. Write a
+sample driver program (with a main method) that uses the mailbox class you created.
+
+Binary / Decimal Quiz Generator
+Someone important to you needs to practice their binary to decimal conversions and decimal
+to binary conversions. You decide to practice your object oriented programming skills to
+solve this problem. Develop and write a program that will generate a problem of each type
+with randomness. Each time you ask for a quiz, it creates two questions, each based on a
+random decimal number.
+
+You will also need to create the class with a main method that will print out the problems.
+Don’t worry about the answer key, just generate the problems.
+
+Tracking EBooks
+You’ve recently gotten into reading ebooks and now have several apps and formats, some are
+rented and some are yours, some are on your phone and some are in the cloud, etc. You need
+to get a handle on this AND you want one easy way to see what you have, what you’ve read and
+what you want.  Design an ebook class with all the information you think an ebook should know
+about itself (format, title, author, etc) in addition to the information you WANT it to know
+(whether you’ve read it, own it, want it, etc.). Then design its behaviors, which should be
+related to those variables as you will want to set or change some of them such as marking a
+book read once you finish it.
+
+You will then create the class with main that you will use to create several ebook objects,
+setting their variables and using their methods. Don’t forget to write a toString method so
+you can print an ebook out in a way that makes sense.

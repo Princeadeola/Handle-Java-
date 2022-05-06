@@ -1,0 +1,96 @@
+Week4Lab – 10 pts
+Pre-lab questions
+1.The best way to get comfortable with loops is to write them! Write just the
+loops (and any required, dependent variables) to do the following:
+a.Count down from 10 to Blast Off!, printing each number on its own line.
+
+b.Replace the lowercase letter e from each user entered String, replacing it with an
+underscore and printing the new String. Allow the user to enter as many Strings as
+they want. Choose a good sentinel value.
+
+c.Count up by a given number from 0 to another given number. For example the user may
+enter 5 and 30 and the loop should produce: 5, 10, 15, 20, 25, 30 then stop.
+
+d.Rewrite the while loop in a.  to a for loop.
+
+e.Write a for loop that adds the even numbers from 0 to 100, then prints the final result only.
+
+
+
+
+
+
+
+
+Choose one of the following do develop into a program that uses at least one class
+outside of the driver class that contains the main method. Your solution MUST use an
+ArrayList of objects created from your custom class. Once chosen, do the following:
+
+Understand the problem (restate in your own words, make any assumptions clear):
+I understand that we are creating a program that allows user (who is a car seller)
+to be able to remove or add a car, print how many cars are left in the garage, including getting
+the value of the car n the garage (value or price)
+
+UML diagrams of any classes needed, including the one with main:
+
+Pseudocode of each class:
+<========= Main.java =========>
+=> User is greeted with a message
+=> User is requested to select an option
+=> User is then taken to carry out the selected option (like removing a car)
+=> If user enters wrong option, error is an handled and option is displayed again
+=> If User enters 0, the program is terminated
+
+<========= Car.java =========>
+=> Declare variables to hold name, price, speed and model
+=> Declare the getters of each variables
+=> Declare the setters of each variables
+=> Call the toString method
+
+<========= Driver.java =========>
+=> Declare the object of our Car class
+=> Create an arrayList to hold each car in the garage
+=> Create a method to add a car
+=> Create a method to print garage
+=> Create a method to remove a car
+=> Create a method to get the value/price
+
+
+Name of files (.java) submitted:
+Main.java
+Car.java
+Driver.java
+
+Screenshots of at least three separate runs of your program with test data:
+
+Garage and Cars
+Write a Car class that includes key ways we describe cars. It has to include either price
+or value (it can include both). Be sure to determine the getters and setters that need to
+be written, and write the toString() method appropriately so when you ‘print’ a car, it
+makes sense.
+
+The driver class will contain a garage (ArrayList) that contains several cars. The user
+must be able to add a car to the garage, print the contents of the garage, get the value
+of the cars in the garage, remove a car from the garage (like selling it).
+
+Airplane Seats
+Write a Seat class that contains information on a given seat on an airplane. The seat is
+available or sold. If it is sold, it knows the confirmation number. It always knows its
+value (or price) and its type. You get to name the types, but make sure that “desk” is one
+of them! Determine the getters and setters and any other methods you need, but be sure to
+write toString() because you will be printing out the seats.
+
+The driver class will contain an ArrayList of all the seats. Use a loop or loops to generate
+at least 100 seats in total. The user must be able to see all the seats that are available,
+and all that are available of a certain type (like “desk”), choose one getting a confirmation
+number, then be able to view all seats with that confirmation number.
+
+Cooking and Calories
+Write an ingredient class so that a given ingredient knows its unit and calories, such as
+100 calories and 1 cup, as well as its name and type, such as protein, carb or fat.
+
+The driver class for this will allow the user to create ingredients from a recipe, see them
+as a list, one ingredient per line, formatted as expected for a recipe. They will also be
+able to get the total calories for the whole recipe and be able to enter the number of
+servings and get the calories per serving. The user should also be able to get a list of
+ingredients by type, ex. printing only the protein ingredients.

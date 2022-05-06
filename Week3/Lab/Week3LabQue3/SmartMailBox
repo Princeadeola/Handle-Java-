@@ -1,0 +1,46 @@
+Que: Understand the problem (restate in your own words, make any assumptions clear):
+ANS:
+The Smart mail box is consider to have a mail racks which can hold only 5 mails,
+when a new mail enters then the owner receive a notification that the a mail
+has entered and get a total mails available in the mailbox and the owner can get
+remove mails
+
+Que: UML diagrams of any classes needed, including the one with main:
+ANS:
+    imaged attached
+
+Que: Pseudocode of each class:
+ANS:
+<==== main class ====>
+=> The main method is starting point of our program
+=> Create the object our SmartMailBox
+=> Call the mailDropped method using object of the SmartMailBox
+=> Change the the value of the parameter of the mailDropped method
+=> Call the mailRemove method of the SmartMailBox
+
+<==== SmartMailBox ====>
+=> Create an int value to hold the number of mail
+=> Initialize the int value to zero
+=> Create a receivedAlert method that sends alert/notification to owner
+==> Inside the receivedAlert method
+    ==> check if number of mail is greater than 0
+    ==> check if number of mail is greater than 5
+    ==> check if it is none above
+=> Create a mailDropped method
+==> Inside the mailDropped method
+    ==> The mailDropped method receives a newMail parameter
+    ==> Check if the number of mail is greater than 5
+    ==> Check if not
+=> Create a numberOfMailsInMailBox method
+==>Inside the numberOfMailsInMailBox
+   ==> Get the total number of mail available in the mail box
+=> Create removeMail method
+==> Inside the removeMail method
+    ==> check if number of mail is equal to zero
+    ==> check if number of mail is greater than 5
+    ==> check if it is none of the above
+
+Que: Name of files (.java) submitted:
+ANS:
+SmartMailBox.java
+main.java

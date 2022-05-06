@@ -1,0 +1,131 @@
+<Ibrahim Alabi>
+<04/29/2022>
+Week5Meet - 10 pts
+Turn in on BBL as soon as complete, but before end of day Friday
+following the lecture.
+
+We are changing it up this time!
+Answer these questions as we progress through the meeting.
+
+1.Please circle/highlight the nouns in the following program requirements:
+
+The Great Lakes Shipping company ships pallets of goods from an origin to
+a destination. Sometimes the pallets get loaded onto boats and shipped
+across a lake, but many pallets get loaded onto trucks for some portion of
+their trip. The company is making use of cutting-edge tech and has invested
+in self-driving electric vans for last mile delivery. They need to be able
+to track pallets, assign them to a boat or truck or van, load, and unload
+pallets. Each boat has a captain, and each truck has a driver. In addition,
+with fuel prices fluctuating, they need to track fuel on the boats and trucks.
+All vehicles that use fuel, use diesel.
+
+ANS:
+Boats
+Trucks
+Vans
+Pallets
+
+2.Make a list with the most likely candidates for classes at the top of the list.
+Who did you work with?
+ANS:
+Pallets, Boats, Truck, Van
+
+3.The keyword this. Take a look at the toString() method in the Pallet class:
+
+public String toString(){
+     String label = "PalletID: " + this.getID() + "\nOrigin: " +
+     this.getOrigin() + "\nDestination: " + this.getDestination() +
+     "\nDim: " + this.getDimensions();
+     return label;
+   }
+In your own words, why are we using the this keyword here?
+
+ANS:
+The keyword 'this' is referencing to the method of the current class
+
+
+
+4.Read the Fuelable interface:
+public interface Fuelable {
+  public void addFuel(int fuel);
+  public int getFuel();
+}
+
+Then read the implementations of each method in Boat and Truck:
+public void addFuel(int fuel){
+     fuelGallons += fuel;
+}
+public int getFuel(){
+     return fuelGallons;
+}
+If the boat can hold 100 gallons of diesel, how can you improve the implementation
+of addFuel() so it is impossible to add fuel over the 100 gallon limit?
+
+ANS:
+public void addFuel(int fuel){
+     int Limit = 100;
+     if(full <= 100){
+        fuelGallons += fuel;
+     }
+}
+
+If Truck has two fuel tanks of 50 gallons each(a not uncommon occurrence) how
+could you improve the implementation code for addFuel() for the truck?
+ANS:
+public void addFuel(int fuel){
+     if (fuel <= tank1){
+       tank1 = fuelGallons + fuel;
+     }else if (tank1 == 50 && (fuel - tank1) != 0){
+       tank2 = fuelGallons + fuel;
+     }else {
+       System.out.println("Both tanks are filled");
+     }
+   }
+Note: tank1 and tank2 are declared in the class Trunk.java
+
+5.For the load and unload methods, is the pallet object changed in any way?
+public boolean load(Pallet p){
+     boolean fits;
+     if ((capacity - p.getVolume()) > 0){
+       fits = cargo.add(p);
+       capacity -= p.getVolume();
+     }
+     else {
+       fits = false;
+     }
+     return fits;
+   }
+
+   public Pallet unload(Pallet p){
+     int loc = cargo.indexOf(p);
+     int vol = p.getVolume();
+     capacity += vol;
+     return cargo.remove(loc);
+   }
+
+ANS:
+The object was not changed, it was only used to get the values of variables
+declared in Pallet
+
+
+6.Develop your white-box test cases for your chosen class. Who did you work with?
+I worked with Mangesh.
+
+7.What is the name of your tester file? Submit the .java file
+ANS:
+Tester.Java
+
+8.What are the results of your test cases? How do you KNOW you tested every line
+of code in your class?
+ANS:
+By testing each and every methods given by each class
+
+
+Reflect on your learning and your needs. After this class meeting, what topics do
+you feel like you learned and what topics do you feel like you need more
+information on to learn?
+ANS:
+Unit testing
+Objects
+Reference types
+

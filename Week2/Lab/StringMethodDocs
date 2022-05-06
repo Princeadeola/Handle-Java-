@@ -1,0 +1,24 @@
+Created a program to understand the methods provided by the String class
+
+Methods used includes (According to the question):
+a.char a = str.charAt(1) :- This returns h because the charAt(int index) method is used
+to return any character at the specific index provided in our charAt() method,
+which 1 in our question
+
+b.int b = str.compareTo(“Oreo”) :- returns negative because our input string
+"Oreo" is less than str
+
+c.int c = str.compareToIgnoreCase(“chocolate chip”) :- compares both strings
+while ignoring the case sensitivity
+
+d.String d = str.concat(“ Cookie”) :- combines ' cookies' to first String 'str'
+
+e.boolean e = str.contains(‘z’) :- the contains method checks if 'z' value exits
+inside of str variable
+
+f.int f = str.indexOf(‘a’) :- indexOf checks the index position of the 'a' in str variable
+
+g.int g = str.indexOf(‘h’, 5) :- checks for the position of 'h' starting from index position 5
+
+h.String h = str.substring(10) :- print string starting from a particular index (10)
+

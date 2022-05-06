@@ -1,0 +1,12 @@
+Statistics
+
+=> As the user for grade 1
+=> As the user for grade 2
+=> As the user for grade 3
+
+=> Calculate the user average using "avg = sum / 3"
+=> Calculate the user min using the Math.min()
+=> Calculate the user max using the Math.max()
+=> Calculate the user range using "range = max - min"
+
+Reference to statistics.java for full code
